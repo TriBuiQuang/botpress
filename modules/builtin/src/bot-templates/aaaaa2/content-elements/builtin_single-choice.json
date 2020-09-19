@@ -1,0 +1,23 @@
+[
+  {
+    "id": "builtin_single-choice-40xz1F",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "Tu van",
+          "value": "1"
+        },
+        {
+          "title": "Khong tu van",
+          "value": "2"
+        }
+      ],
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Tu van"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-09-18T08:07:02.366Z",
+    "modifiedOn": "2020-09-18T08:07:02.366Z"
+  }
+]

@@ -1,0 +1,27 @@
+.diagram {
+  height: calc(100%);
+  background: url('assets/ui-studio/public/img/grid.png') repeat;
+}
+
+.diagram :global(.srd-diagram) {
+  height: calc(100%);
+  background: url('assets/ui-studio/public/img/grid.png') repeat;
+}
+
+.wrapper {
+  background-color: #f1f1f1;
+}
+.diagram :global(.srd-diagram .srd-link-layer .srd-default-link path) {
+  stroke: rgb(171, 204, 204);
+  stroke-width: 4px;
+}
+
+.diagram :global(.srd-diagram .srd-node-layer .srd-port) {
+  top: 20px;
+  left: -15px;
+  position: absolute;
+}
+
+.diagram :global(.srd-diagram .srd-node-layer .style__item___J7KXD) {
+  background: white;
+}

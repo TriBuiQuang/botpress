@@ -1,0 +1,68 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "entry",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-e9ab11"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Qag78E"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-e9ab11",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-e9ab11",
+      "flow": "skills/choice-e9ab11.flow.json",
+      "next": [
+        {
+          "caption": "User picked [1]",
+          "condition": "temp['skill-choice-ret-i0tmuw7i1z'] == \"1\"",
+          "node": "node-6eae"
+        },
+        {
+          "caption": "User picked [2]",
+          "condition": "temp['skill-choice-ret-i0tmuw7i1z'] == \"2\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-9e10"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "b08d6f434c",
+      "name": "node-6eae",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-oSm13r"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "6ccecc208d",
+      "name": "node-9e10",
+      "next": [],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

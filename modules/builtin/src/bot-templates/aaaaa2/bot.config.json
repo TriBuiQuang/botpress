@@ -1,0 +1,46 @@
+{
+  "locked": false,
+  "disabled": false,
+  "private": false,
+  "details": {},
+  "$schema": "../../bot.config.schema.json",
+  "description": "",
+  "active": true,
+  "version": "12.10.6",
+  "author": "Botpress, Inc.",
+  "license": "AGPL-3.0",
+  "imports": {
+    "modules": [],
+    "incomingMiddleware": [],
+    "outgoingMiddleware": [],
+    "contentTypes": [
+      "builtin_action-button",
+      "builtin_card",
+      "builtin_carousel",
+      "builtin_image",
+      "builtin_single-choice",
+      "builtin_text",
+      "dropdown"
+    ]
+  },
+  "dialog": {
+    "timeoutInterval": "5m"
+  },
+  "logs": {
+    "expiration": "1 week"
+  },
+  "defaultLanguage": "en",
+  "languages": [
+    "en"
+  ],
+  "id": "aaa",
+  "name": "aaa",
+  "telegramToken": "1290395436aahop5ruolwad81topqg2ensnsebcyzk4gq",
+  "pipeline_status": {
+    "current_stage": {
+      "id": "prod",
+      "promoted_on": "2020-09-18T08:05:50.018Z",
+      "promoted_by": "buiquangductri@gmail.com"
+    }
+  }
+}
