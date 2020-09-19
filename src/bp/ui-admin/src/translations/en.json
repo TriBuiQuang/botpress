@@ -285,6 +285,8 @@
           "config": "Config",
           "copyLinkToClipboard": "Copy link to clipboard",
           "copyToClipboard": "Copy to clipboard",
+          "copyTelegramLinkToClipboard": "Copy link telegram to clipboard",
+          "copyTelegramToClipboard": "Copy telegram to clipboard",
           "createRevision": "Create Revision",
           "delete": "Delete",
           "disabled": "disabled",

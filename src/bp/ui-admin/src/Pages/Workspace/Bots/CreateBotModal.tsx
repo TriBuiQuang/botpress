@@ -114,7 +114,7 @@ class CreateBotModal extends Component<Props, State> {
   }
 
   handleBotIdChanged = e => this.setState({ botId: sanitizeBotId(e.target.value), generateId: false })
-  handleTelegramTokenChanged = e => this.setState({ telegramToken: sanitizeBotId(e.target.value) })
+  handleTelegramTokenChanged = e => this.setState({ telegramToken: e.target.value })
   createBot = async e => {
     e.preventDefault()
     if (this.isButtonDisabled) {

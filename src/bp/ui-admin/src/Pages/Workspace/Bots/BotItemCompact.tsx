@@ -44,11 +44,12 @@ const BotItemCompact: FC<Props> = ({
   viewLogs
 }) => {
   const botShortLink = `${window.location.origin + window['ROOT_PATH']}/s/${bot.id}`
+  const botTelegramLink = `t.me/${bot.name}`
   const botStudioLink = isChatUser() ? botShortLink : `studio/${bot.id}`
 
   return (
     <div className="bp_table-row" key={bot.id}>
-      testing UI 11
+      testing UI 16 {bot.name}
       <div className="actions">
         {hasError && (
           <AnchorButton text={lang.tr('admin.workspace.bots.item.reload')} icon="refresh" onClick={reloadBot} minimal />
@@ -89,6 +90,13 @@ const BotItemCompact: FC<Props> = ({
 
               <CopyToClipboard text={botShortLink} onCopy={() => lang.tr('admin.workspace.bots.item.copyToClipboard')}>
                 <MenuItem icon="link" text={lang.tr('admin.workspace.bots.item.copyLinkToClipboard')} />
+              </CopyToClipboard>
+
+              <CopyToClipboard
+                text={botTelegramLink}
+                onCopy={() => lang.tr('admin.workspace.bots.item.copyTelegramToClipboard')}
+              >
+                <MenuItem icon="link" text={lang.tr('admin.workspace.bots.item.copyTelegramLinkToClipboard')} />
               </CopyToClipboard>
 
               <AccessControl resource="admin.logs" operation="read">
