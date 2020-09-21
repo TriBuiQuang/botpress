@@ -16,10 +16,16 @@
   stroke-width: 4px;
 }
 
-.diagram :global(.srd-diagram .srd-node-layer .srd-port) {
-  top: 20px;
-  left: -15px;
-  position: absolute;
+.diagram :global(.srd-diagram .srd-node-layer div[data-name='in']) {
+  top: 19px;
+  left: -54%;
+  position: relative;
+}
+
+.diagram :global(.style__startPort___2GM6G .port) {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 20px;
 }
 
 .diagram :global(.srd-diagram .srd-node-layer .style__item___J7KXD) {
